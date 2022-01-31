@@ -11,3 +11,11 @@ python main.py a=1 b=5 c = 6
 ```
 
 This should give us `x = -3` and `x = -2`
+
+### What if you don't have python installed?
+
+Use docker!
+
+```
+docker run -v ${pwd}:/app -w /app python:3.9 python main.py a=1 b=5 c=6
+```
